@@ -1,0 +1,129 @@
+body {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: radial-gradient(45% 45%, #EEEEEE -700%, #141517 100%); }
+  body .center {
+    background-color: #141517;
+    width: 25vw;
+    height: 80vh;
+    position: relative;
+    box-shadow: 10px 0px 18px 7px rgba(34, 37, 40, 0.79);
+    overflow: hidden; }
+    body .center .fa-arrow-left {
+      position: absolute;
+      z-index: 444;
+      color: #A3A3A3;
+      top: 30px;
+      left: 20px; }
+    body .center .progression-bar {
+      color: #A3A3A3;
+      height: 8vh;
+      width: 100%;
+      background-color: rgba(19, 21, 23, 0.4);
+      position: absolute;
+      top: 20vh;
+      display: flex;
+      flex-flow: column; }
+      body .center .progression-bar .name {
+        margin-left: 35px;
+        font-weight: bold;
+        font-size: 20px;
+        position: relative; }
+      body .center .progression-bar .progress-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -40px;
+        margin-top: -20px; }
+        body .center .progression-bar .progress-div p {
+          margin-left: 0px;
+          font-size: 15px;
+          margin-top: 14px;
+          margin-right: 7px;
+          font-weight: lighter; }
+        body .center .progression-bar .progress-div p:last-child {
+          margin-left: 7px; }
+      body .center .progression-bar progress[value] {
+        width: 250px;
+        height: 6px;
+        -webkit-appearance: none; }
+      body .center .progression-bar progress::-webkit-progress-value {
+        background: #FF5544; }
+    body .center .image-pleine {
+      height: 40vh; }
+      body .center .image-pleine #MajidJ {
+        width: 100%;
+        height: 100%;
+        position: relative; }
+    body .center .button-play {
+      border-radius: 50px;
+      height: 60px;
+      width: 60px;
+      position: absolute;
+      top: 235px;
+      right: 0;
+      background-color: #FF5544;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+      z-index: 4; }
+      body .center .button-play i {
+        color: #A3A3A3; }
+      body .center .button-play .fa-pause {
+        display: none; }
+    body .center .display-musique {
+      width: 100%;
+      height: 42vh;
+      position: absolute; }
+      body .center .display-musique .newbar-progress {
+        color: #A3A3A3; }
+      body .center .display-musique .aleatoire {
+        color: #A3A3A3; }
+      body .center .display-musique .time-remaining {
+        color: #A3A3A3; }
+    body .center .liste-musique {
+      height: 42vh;
+      width: 100%;
+      background-color: #141517;
+      position: absolute;
+      top: 28vh;
+      color: #A3A3A3;
+      animation: ease; }
+      body .center .liste-musique .liste-musique-top {
+        height: 5vh;
+        display: flex;
+        justify-content: space-between; }
+        body .center .liste-musique .liste-musique-top .liste-musique-top-name {
+          font-size: 17px;
+          margin-left: 20px; }
+          body .center .liste-musique .liste-musique-top .liste-musique-top-name p:first-child {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 0px; }
+          body .center .liste-musique .liste-musique-top .liste-musique-top-name p:last-of-type {
+            margin-top: 0px; }
+        body .center .liste-musique .liste-musique-top .liste-musique-top-i {
+          margin-top: 35px; }
+          body .center .liste-musique .liste-musique-top .liste-musique-top-i i {
+            margin-right: 30px; }
+      body .center .liste-musique .liste-album-nom {
+        display: flex;
+        flex-direction: column;
+        margin: 24px 20px 0px;
+        overflow: hidden;
+        transform: translate; }
+        body .center .liste-musique .liste-album-nom .artiste-musique {
+          margin-top: 15px;
+          display: flex;
+          justify-content: space-between; }
+          body .center .liste-musique .liste-album-nom .artiste-musique .artiste-musique-name {
+            display: flex; }
+            body .center .liste-musique .liste-album-nom .artiste-musique .artiste-musique-name p {
+              margin-left: 20px; }
+          body .center .liste-musique .liste-album-nom .artiste-musique img {
+            width: 50px;
+            height: 50px; }
